@@ -1,9 +1,9 @@
 /* Style for index.php */
 .form_container {
-        max-width: 600px;
-        min-width: 400px;
-        height: 300px;
-    }
+    max-width: 600px;
+    min-width: 400px;
+    height: 300px;
+}
 .form-group {
     width: 200px;
     position: relative;
@@ -12,12 +12,4 @@
 .nav-tabs > li {
     width: 199px;
     text-align: center;
-}
-
-.header {
-        color : black;
-        background-color: #ADD8E6;
-        padding: 5em;
-        clear:left;
-        text-align: center;
 }

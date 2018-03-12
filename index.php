@@ -45,62 +45,78 @@
 </head>
 <body>
     <!-- Login form container -->
-    <form>
-
-        <div class="container">    
-            <div class="form_container panel panel-default">
-                <!-- Main buttons to change pages -->
-                <ul class="nav nav-tabs">
-                    <li class="active"><a id="emp" href="#">Employee</a></li>
-                    <li><a id="guest" href="#">Guest</a></li>
-                    <li><a id="sguest" href="#">Special Guest</a></li>
-                </ul>
-                <!-- Email, Username field areas and buttons -->
-                <!-- Login page for Employees -->
-                <div class="panel-body emp" id="emp">
-                    <div class="form-group">
-                        <label for="email">Email:</label>
-                        <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
-                    </div>
-                    <div class="form-group">
-                        <label for="pwd">Password:</label>
-                        <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pwd">
-                    </div>
-                    <div class="form-group">
-                    <button type="submit" class="btn btn-default">Submit</button>
-                    </div>
-                </div>
-                <!-- Login page for guests -->
-                <div class="panel-body guest" id="guest">
-                    <div class="form-group">
-                        <label for="email">Email:</label>
-                        <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
-                    </div>
-                    <div class="form-group">
-                        <label for="pwd">Password:</label>
-                        <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pwd">
-                    </div>
-                    <div class="form-group">
-                        <button type="submit" class="btn btn-default">Submit</button>
-                    </div>
-                </div>
-                <!-- Login page for special guests -->
-                <div class="panel-body sguest" id="sguest">
-                    <div class="form-group">
-                        <label for="email">Email:</label>
-                        <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
-                    </div>
-                    <div class="form-group">
-                        <label for="pwd">Password:</label>
-                        <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pwd">
-                    </div>
-                    <div class="form-group">
-                        <button type="submit" class="btn btn-default">Submit</button>
-                    </div>
-                </div>
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+              <a class="navbar-brand" href="#">Railway Resthouse Management</a>
             </div>
         </div>
-    </form>
+    </nav>
+    <div class="row">
+        <div class="col-md-6">
+            <form>
+                <div class="container">    
+                    <div class="form_container panel panel-default">
+                        <!-- Main buttons to change pages -->
+                        <ul class="nav nav-tabs">
+                            <li class="active"><a id="emp" href="#">Employee</a></li>
+                            <li><a id="guest" href="#">Guest</a></li>
+                            <li><a id="sguest" href="#">Special Guest</a></li>
+                        </ul>
+                        <!-- Email, Username field areas and buttons -->
+                        <!-- Login page for Employees -->
+                        <div class="panel-body emp" id="emp">
+                            <div class="form-group">
+                                <label for="email">Email:</label>
+                                <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+                            </div>
+                            <div class="form-group">
+                                <label for="pwd">Password:</label>
+                                <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pwd">
+                            </div>
+                            <div class="form-group">
+                            <button type="submit" class="btn btn-default">Submit</button>
+                            </div>
+                        </div>
+                        <!-- Login page for guests -->
+                        <div class="panel-body guest" id="guest">
+                            <div class="form-group">
+                                <label for="email">Email:</label>
+                                <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+                            </div>
+                            <div class="form-group">
+                                <label for="pwd">Password:</label>
+                                <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pwd">
+                            </div>
+                            <div class="form-group">
+                                <button type="submit" class="btn btn-default">Submit</button>
+                            </div>
+                        </div>
+                        <!-- Login page for special guests -->
+                        <div class="panel-body sguest" id="sguest">
+                            <div class="form-group">
+                                <label for="email">Email:</label>
+                                <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+                            </div>
+                            <div class="form-group">
+                                <label for="pwd">Password:</label>
+                                <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pwd">
+                            </div>
+                            <div class="form-group">
+                                <button type="submit" class="btn btn-default">Submit</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <!-- Instructions -->
+        <div class="col-md-6">
+            Instructions
+            <br>
+            
+            -- Add instructions here
+        </div>
     <!-- End of login form container -->
 </body>
 </html>
