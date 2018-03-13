@@ -3,6 +3,7 @@
 require_once "connect.php"; //Verifies if MySQL Database is connected or not.
 
 //Creating the required table
+//For sake of commit
 
 /* 
 
