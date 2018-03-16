@@ -51,6 +51,21 @@ if ($conn->query($create3) === TRUE) {
     echo  nl2br ("Error creating table: " . $conn->error."\n");
 }
 
+
+$create4="CREATE TABLE IF NOT EXISTS GUEST_HOUSES (
+CITY VARCHAR(30) ,
+GUEST_HOUSE VARCHAR(30) NOT NULL,
+CONTACT_NO VARCHAR(30) NOT NULL,
+ADDRESS VARCHAR(50) NOT NULL
+)";
+
+if ($conn->query($create4) === TRUE) {
+    echo  nl2br ("Table Guest Houses created successfully \n");
+} else {
+    echo  nl2br ("Error creating table: " . $conn->error."\n");
+}
+
+
 $insert1 = "INSERT INTO EMPLOYEES (id, firstname, lastname, email, reg_date)
 VALUES ('120023451221', 'Amita', 'Gupta','ag@gmail.com','2018-01-19 03:14:07')";
 if ($conn->query($insert1) === FALSE) {
@@ -153,6 +168,44 @@ $insert20 = "INSERT INTO SPECIAL_GUESTS (id, firstname, lastname, email, reg_dat
 VALUES ('120011987658', 'Yogesh', 'Dutta','yogidutta@gmail.com','2018-01-19 03:14:07')";
 if ($conn->query($insert20) === FALSE) {
     echo "Error: " . $insert20 . "<br>" . $conn->error;
+}
+
+
+
+$insert21 = "INSERT INTO GUEST_HOUSES (CITY,GUEST_HOUSE,CONTACT_NO,ADDRESS)
+VALUES ('Mumbai','guest house 1', '8878981234', '501,abc road, near chatrapati shivaji terminus')";
+if ($conn->query($insert21) === FALSE) {
+    echo "Error: " . $insert21 . "<br>" . $conn->error;
+}
+
+$insert22 = "INSERT INTO GUEST_HOUSES (CITY,GUEST_HOUSE,CONTACT_NO,ADDRESS)
+VALUES ('Delhi','guest house 1', '8908767934', '902,xyz road, Anand Vihar')";
+if ($conn->query($insert22) === FALSE) {
+    echo "Error: " . $insert22 . "<br>" . $conn->error;
+}
+
+$insert23 = "INSERT INTO GUEST_HOUSES (CITY,GUEST_HOUSE,CONTACT_NO,ADDRESS)
+VALUES ('Mumbai','guest house 2', '7767981234', '11,pqr road, near Panvel Station')";
+if ($conn->query($insert23) === FALSE) {
+    echo "Error: " . $insert23 . "<br>" . $conn->error;
+}
+
+$insert24 = "INSERT INTO GUEST_HOUSES (CITY,GUEST_HOUSE,CONTACT_NO,ADDRESS)
+VALUES ('Bhopal','guest house 1', '9902020304', '202,hoshangabad road, Habibganj')";
+if ($conn->query($insert24) === FALSE) {
+    echo "Error: " . $insert24 . "<br>" . $conn->error;
+}
+
+$insert25 = "INSERT INTO GUEST_HOUSES (CITY,GUEST_HOUSE,CONTACT_NO,ADDRESS)
+VALUES ('Jaipur','guest house 1', '9956581234', '121,pink road, near Jaipur Junction')";
+if ($conn->query($insert25) === FALSE) {
+    echo "Error: " . $insert25 . "<br>" . $conn->error;
+}
+
+$insert26 = "INSERT INTO GUEST_HOUSES (CITY,GUEST_HOUSE,CONTACT_NO,ADDRESS)
+VALUES ('Delhi','guest house 2', '9586741253', '321, near Delhi Sarai Rohilla Station, Old Delhi')";
+if ($conn->query($insert26) === FALSE) {
+    echo "Error: " . $insert26 . "<br>" . $conn->error;
 }
 
 ?>
