@@ -11,9 +11,9 @@ if (!$conn) {
     }
 
 $aadhar = $_POST['aadhar'];
+$hash = $aadhar/4;
 
-
-$profile_q = "select * from titles where aadhar=$aadhaar"
+$profile_q = "select * from u$hash where aadhar=$aadhaar"
 
 $profile =  mysqli_query($conn,$profile_q);
 
@@ -21,7 +21,22 @@ $count = 0;
 $num_rows = mysqli_num_rows($profile);
 $num_cols = mysqli_num_rows($profile);
 for($j=0; $j < $num_rows; ++$j) {
-  $rows = mysqli_fetch_row($result_titles);
+  $rows = mysqli_fetch_row($profile);
+  echo "<tr>";
+  for ($j=0; $j<$num_cols;$j++)
+    {
+      echo "<td>". $rows[0]."</td>";
+    }
+  }
+
+
+
+$all_prev_bookings = "select * from b$hash where aadhar=$aadhaar"
+$count = 0;
+$num_rows = mysqli_num_rows($profile);
+$num_cols = mysqli_num_rows($profile);
+for($j=0; $j < $num_rows; ++$j) {
+  $rows = mysqli_fetch_row($profile);
   echo "<tr>";
   for ($j=0; $j<$num_cols;$j++)
     {
