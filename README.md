@@ -2,6 +2,15 @@
 
 Developed during the finals of Smart India Hackathon 2018 under the Ministry of Railways, Government of India.
 
+### Contributors
+
+* Abhishek Varghese
+* Himali Goel
+* Manika Khare
+* Jarnu Girdhar
+* Ishan Singhal
+* Avya Bansal
+
 ### Technology Stack
 
 * HTML
