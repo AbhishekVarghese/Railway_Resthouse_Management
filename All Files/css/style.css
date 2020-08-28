@@ -1,0 +1,15 @@
+/* Style for index.php */
+.form_container {
+    max-width: 600px;
+    min-width: 400px;
+    height: 350px;
+}
+.form-group {
+    width: 250px;
+    position: relative;
+}
+
+.nav-tabs > li {
+    width: 299px;
+    text-align: center;
+}
